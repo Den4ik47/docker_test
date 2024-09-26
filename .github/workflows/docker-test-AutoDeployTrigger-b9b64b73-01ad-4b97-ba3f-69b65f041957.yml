@@ -36,9 +36,6 @@ jobs:
         with:
           appSourcePath: ${{ github.workspace }}
           _dockerfilePathKey_: _dockerfilePath_
-          registryUrl: 
-          registryUsername: ${{ secrets.DOCKERTEST_REGISTRY_USERNAME }}
-          registryPassword: ${{ secrets.DOCKERTEST_REGISTRY_PASSWORD }}
           containerAppName: docker-test
           resourceGroup: Hackyeah2024
           imageToBuild: default/[parameters('containerAppName')]:${{ github.sha }}
