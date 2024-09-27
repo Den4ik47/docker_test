@@ -51,6 +51,3 @@ async def post_question(input: Input):
     
   return game
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
-
